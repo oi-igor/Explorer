@@ -1,114 +1,117 @@
-*{
-  margin: 0px;
-  padding: 0px;
-}
-
-/* font-family: 'DM Sans', sans-serif;
-font-family: 'Inter', sans-serif;
-font-family: 'Mulish', sans-serif;
-font-family: 'Open Sans', sans-serif; */
+/*  font-family: 'DM Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+*/
 
 body{
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    margin: 0px;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
+}
+
+.page{
+    width: 1000px;
+    margin: 0px auto;
+    padding-top: 65px;
+    /* border: 1px solid red; */
+}
+
+.page nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.page nav ul{
+    list-style: none;
+    gap: 48px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.page nav ul li a{
+    font-size: 18px;
+    color: #1F1534;
+    text-decoration: none;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.page nav ul li a:hover{
+    opacity: 1;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section{
+    width: 490px;
+    margin-bottom: 80px;
+}
+
+main section h1{
+    font-family: 'Mulish', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+main section h1 span{
+    font-weight: bold;
+    color: #89C5CC;
+}  
+
+main section p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #7D7987;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+main section button{
+    padding: 14px 32px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #69B99D;
+    color: white;
+    text-transform: uppercase;
+}
+
+main section button:hover{
+box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+background: #49a786;
+cursor: pointer;
+}
+
+.page footer{
+    width: 592px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.page footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 #balls{
-  position: absolute;
-  right: 0px;
-  bottom: -45px;
-}
-
-header{
-  display: flex;
-  margin: 65px 153px 58px 122px;
-}
-
-header p{
-  padding-right: 635px;
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  color: #89C5CC;
-}
-
-header nav a{
-  font-family: 'Mulish', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #1F1534;
-  text-decoration: none;
-}
-
-header nav a + a{
-  margin-left: 48px;
-  font-weight: normal;
-  opacity: 0.5;
-}
-
-#hero #principal{
-  position: absolute;
-  top: 146px;
-  right: 200px;
-  bottom: 82px;
-}
-
-#hero #left{
-  margin: 100px 672px 82px 119px;
-}
-
-span{
-  font-weight: bold;
-  color: #89C5CC;
-}
-
-#hero #left #headerText h1{
-  margin-bottom: 40px;
-  font-family: 'Mulish', sans-serif;
-  font-weight: normal;
-  font-size: 49px;
-}
-
-#hero #left #headerText p{
-  margin-bottom: 40px;
-  font-family: 'Open Sans', sans-serif;
-  color: #7D7987;
-  font-size: 14px;
-  line-height: 28px;
-}
-
-#hero #button button{
-  display: flex;
-  vertical-align: middle;
-  background-color: #69B99D;
-  width: 179px;
-  height: 56px;
-  text-align: center;
-  border: none;
-}
-
-#hero #button button img{
-  margin: 15.5px 0px 16.5px 32px;
-}
-
-#hero #button button p{
-  display: flex;
-  margin: 18px 32px 18px 5px;
-  color: #F9F9F9;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#footer{
-  width: 592px;
-  margin: 0px auto 30px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: #000000;
-}
-
-#footer a{
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
 }
